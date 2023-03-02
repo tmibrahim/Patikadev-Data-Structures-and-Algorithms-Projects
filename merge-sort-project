@@ -1,0 +1,36 @@
+Project 2
+
+To know the functioning of merge sort, lets consider an array arr[]={16,21,11,8,12,22}
+
+Here is a visualization of the merge sort algorithm applied to the list [16, 21, 11, 8, 12, 22]:
+
+                   
+                 [16, 21, 11, 8, 12, 22]
+                   /              \
+         [16, 21, 11]           [8, 12, 22]
+           /       \               /       \
+         [16]   [21, 11]         [8]     [12, 22]
+                /      \                 /     \
+              [21]     [11]           [12]    [22]
+               \       /                \     /
+               [11, 21]                 [12, 22]
+                    \                      /
+                    [8, 11, 12, 16, 21, 22]
+
+In this visualization, each node represents a sub-list of the original list, and the edges represent the merging of sub-lists in sorted order. The top node represents the original list, and the bottom node represents the final sorted list.
+
+The algorithm first divides the original list into two sub-lists: [16, 21, 11] and [8, 12, 22]. These sub-lists are then recursively divided into smaller sub-lists until they each contain only one element. Then, the sub-lists are merged back together in sorted order, starting with the smallest sub-lists and working up to the original list.
+
+In the final step, the two halves of the original list are merged together by comparing the first elements of each half and adding the smaller element to the sorted list. The process is repeated for the remaining elements until all elements are in the sorted list.
+
+The worst-case time complexity of the merge sort algorithm is O(n*log n), where n is the number of elements in the list.
+
+This means that as the size of the list grows, the number of operations required by the merge sort algorithm increases at a rate of n multiplied by the logarithm of n. While this is a slower rate of growth than some other sorting algorithms, such as quicksort or heapsort, it is still considered to be efficient for large input sizes.
+
+In the case of the list [16, 21, 11, 8, 12, 22], the worst-case time complexity of merge sort would be:
+
+    n = 6 (the number of elements in the list)
+    log n = 2.58 (the logarithm of 6 to the base 2)
+    n*log n = 6 * 2.58 = 15.48
+
+So, in the worst-case scenario, merge sort would require approximately 15.48 operations to sort this list. However, it is important to note that the actual number of operations performed by the algorithm will depend on the specific implementation and the input data.
