@@ -1,0 +1,64 @@
+Proje 1
+
+Consider an insertion sort example: arr[]:{22,27,16,2,18,6}
+
+First Pass: 22
+[22,27,16,2,18,6]
+
+Second Pass: 16
+[22,16,27,2,18,6]
+[16,22,27,2,18,6]
+
+Third Pass: 2
+[16,22,27,2,18,6]
+[16,22,2,27,18,6]
+[16,2,22,27,18,6]
+[2,16,22,27,18,6]
+
+Fourth Pass: 18
+[2,16,22,27,18,6]
+[2,16,22,18,27,6]
+[2,16,18,22,27,6]
+
+Fifth Pass: 6
+[2,16,18,22,27,6]
+[2,16,18,22,6,27]
+[2,16,18,6,22,27]
+[2,16,6,18,22,27]
+[2,6,16,18,22,27]
+
+Insertion Sort is an easy-to-implement, stable sorting algorithm with time complexity of O(n²) in the average and worst case, and O(n) in the best case.
+
+When the elements sorted, because the number 18 place in middle of the elements thus Time Complexity is Average Case
+--------------------------------------------------------------------------------------------------------------------
+
+Lets consider the following array as an example arr[]={7,3,5,8,2,9,4,15,6}
+
+Lets find out first four step.
+
+First Pass:
+* replace 7 with 2. After one iteration 2, which happens to be the least value in the array, tends to appear in the first position of the sorted list.
+
+[2,3,5,8,7,9,4,15,6] 
+
+Second Pass:
+* After traversing, we found that 3 is the second lowest value in the array and as 3 is secont lowest value hence, it will stay second position.
+
+[2,3,5,8,7,9,4,15,6] 
+
+Third Pass:
+*While traversing, 4 came out to be third least value and it should appear at the third place in the array thus, we swaped 4 with element present at third position.
+
+[2,3,4,8,7,9,5,15,6]
+
+Fourth Pass:
+
+* Similarly, for fourth position we traverse the rest of the array and find 5 the fourth least element in the array hence, it will swap at the fourth position
+
+[2,3,4,5,7,9,8,15,6]
+
+and so on...
+
+
+
+
