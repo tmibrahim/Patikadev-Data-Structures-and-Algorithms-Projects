@@ -1,0 +1,27 @@
+Project 3
+
+To know the functioning of merge sort, lets consider an array arr[]={7,5,1,8,3,6,0,9,4,2}
+
+A Binary Search Tree (BST) is a special type of binary tree in which the left child of a node has a value less than the node’s value and the right child has a value greater than the node’s value. This property is called the BST property and it makes it possible to efficiently search, insert, and delete elements in the tree.
+
+
+                         7
+                       /   \
+                      5     8
+                     / \     \
+                    1   6     9
+                   / \         \
+                  0   3         4
+                             /
+                            2
+
+    The root node is 7.
+    All nodes to the left of 7 have values less than 7, and all nodes to the right have values greater than 7.
+    Node 5: left child of 7, with left subtree 1-0-3 and right subtree 6.
+    Node 1: left child of 5, with left subtree 0 and right subtree 3.
+    Node 0: left child of 1, with no children.
+    Node 3: right child of 1, with no children.
+    Node 6: right child of 5, with no left child and right child 9.
+    Node 9: right child of 7, with left child 4.
+    Node 4: left child of 9, with left child 2.
+    Node 2: left child of 4, with no children.
